@@ -1,39 +1,45 @@
-# Use Case Diagram — Web-Based Boarding House Finder
+# UML Use Case Diagram
 
-This diagram shows the main interactions between students, boarding-house owners/managers, and the administrator in the Web-Based Boarding House Finder system.
+```mermaid id="uc3b9m"
+flowchart LR
+    Student([Student])
+    Owner([Boarding-House Owner/Manager])
+    Admin([Administrator])
 
-```mermaid
-usecase-beta
-direction LR
+    subgraph System["Web-Based Boarding House Finder"]
+        UC1([Register])
+        UC2([Log In])
+        UC3([Browse Boarding Houses])
+        UC4([Search and Filter Boarding Houses])
+        UC5([View Boarding-House Details])
+        UC6([Compare Boarding Houses])
+        UC7([Manage Boarding-House Listings])
+        UC8([Update Listing Details and Availability])
+        UC9([Verify Boarding-House Information])
+    end
 
-actor Student("Student")
-actor Owner("Boarding-House Owner/Manager")
-actor Admin("Administrator")
+    Student --- UC1
+    Student --- UC2
+    Student --- UC3
+    Student --- UC4
+    Student --- UC5
+    Student --- UC6
 
-systemBoundary "Web-Based Boarding House Finder"
-    Register("Register")
-    Login("Log In")
-    Browse("Browse Boarding Houses")
-    Search("Search and Filter Boarding Houses")
-    ViewDetails("View Boarding-House Details")
-    Compare("Compare Boarding Houses")
-    ManageListings("Manage Boarding-House Listings")
-    VerifyInfo("Verify Boarding-House Information")
-end
+    Owner --- UC1
+    Owner --- UC2
+    Owner --- UC7
+    Owner --- UC8
 
-Student --> Register
-Student --> Login
-Student --> Browse
-Student --> Search
-Student --> ViewDetails
-Student --> Compare
-
-Owner --> Register
-Owner --> Login
-Owner --> ManageListings
-
-Admin --> Login
-Admin --> VerifyInfo
+    Admin --- UC2
+    Admin --- UC9
 ```
 
-**Key:** Each solid line represents an association between an actor and a use case.
+**Diagram Type:** UML Use Case Diagram
+
+**Scope:** This diagram identifies the primary interactions available to students, boarding-house owners or managers, and administrators within the Web-Based Boarding House Finder.
+
+**Intended Audience:** Students, owners or managers, administrators, developers, and project evaluators.
+
+**Risk Reduced:** This view helps reduce ambiguity about user responsibilities and the system functions expected for each role. It can also help the team identify missing or incorrectly assigned use cases.
+
+**View Note:** The diagram focuses on the proposed system's main use cases. It does not show the sequence of steps within each use case or the internal implementation. No `include` or `extend` relationships are shown because no such dependencies have been established here.
