@@ -108,3 +108,15 @@ Dependencies should point toward application and domain abstractions where appro
 ## Design Note
 
 This is a proposed package structure for the project. Confirm the folders, framework conventions, and dependency relationships with the team and actual implementation before treating them as the final codebase structure.
+
+## Intended Audience
+
+Developers, system analysts, project advisers, and team members responsible for designing and maintaining the system architecture.
+
+## Risk Reduced
+
+Reduces the risk of unclear module responsibilities, tightly coupled components, and inconsistent handling of business rules and database operations.
+
+## View Note
+
+This diagram presents a proposed logical package structure and dependency relationships. The folder names and architecture may be revised based on the team's selected framework, approved requirements, and actual implementation.
