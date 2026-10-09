@@ -36,4 +36,4 @@ Admin --> Login
 Admin --> VerifyInfo
 ```
 
-Key: Each solid line represents an association between an actor and a use case.
+**Key:** Each solid line represents an association between an actor and a use case.
