@@ -1,3 +1,6 @@
+# C4 System Context Diagram
+
+```mermaid
 C4Context
 title System Context Diagram - Web-Based Boarding House Finder
 
@@ -16,3 +19,4 @@ Rel(admin, finder, "Verifies information")
 UpdateRelStyle(student, finder, $offsetX="-35", $offsetY="-35")
 UpdateRelStyle(owner, finder, $offsetY="0")
 UpdateRelStyle(admin, finder, $offsetY="60")
+```
