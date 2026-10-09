@@ -98,4 +98,14 @@ classDiagram
 - A boarding house may have multiple listing reviews over time.
 - The enumerations define the allowed user roles, availability values, listing statuses, and verification decisions.
 
-**Note:** This is a proposed conceptual design. Confirm that the attributes and relationships match the team's agreed requirements and actual implementation before treating them as implemented database fields.
+## Intended Audience
+
+Project developers, system designers, database designers, and project evaluators who need to understand the system's core domain entities, attributes, relationships, and allowed status values.
+
+## Risk Reduced
+
+This view helps reduce ambiguity about the system's data model, the relationships between users and boarding houses, the recording of listing verification history, and the allowed values for roles and statuses.
+
+## View Note
+
+This is a proposed conceptual design. The class attributes, associations, and constraints should be checked against the team's agreed requirements and actual implementation. The administrator-only review rule is a role constraint that must be enforced by the application.
