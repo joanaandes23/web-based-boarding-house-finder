@@ -26,8 +26,6 @@ These diagrams are conceptual designs based on the planned MVP features and may 
 | 10 | Deployment Diagram (Provisional) | `deployment.md` | [Jericho V. Estay] |
 | 11 | Entity-Relationship Diagram (Draft) | `erd.md` | [Jericho V. Estay] |
 
-**Note:** Replace each `[Member Name]` with the actual assigned owner. The deployment diagram is provisional, and the ERD is a draft pending validation against the approved requirements.
-
 ## Source Files
 
 Each Markdown file contains the diagram source code, scope, descriptions, and relevant design notes. The diagrams should be reviewed for consistency with the approved MVP requirements and with one another.
