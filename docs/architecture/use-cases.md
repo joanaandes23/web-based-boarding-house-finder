@@ -1,37 +1,37 @@
 # UML Use Case Diagram
 
-```mermaid id="uc3b9m"
-flowchart LR
-    Student([Student])
-    Owner([Boarding-House Owner/Manager])
-    Admin([Administrator])
+```mermaid
+usecase-beta
+direction LR
 
-    subgraph System["Web-Based Boarding House Finder"]
-        UC1([Register])
-        UC2([Log In])
-        UC3([Browse Boarding Houses])
-        UC4([Search and Filter Boarding Houses])
-        UC5([View Boarding-House Details])
-        UC6([Compare Boarding Houses])
-        UC7([Manage Boarding-House Listings])
-        UC8([Update Listing Details and Availability])
-        UC9([Verify Boarding-House Information])
-    end
+actor Student("Student")
+actor Owner("Boarding-House Owner/Manager")
+actor Admin("Administrator")
 
-    Student --- UC1
-    Student --- UC2
-    Student --- UC3
-    Student --- UC4
-    Student --- UC5
-    Student --- UC6
+systemBoundary "Web-Based Boarding House Finder"
+    Register("Register")
+    Login("Log In")
+    Browse("Browse Boarding Houses")
+    Search("Search and Filter Boarding Houses")
+    ViewDetails("View Boarding-House Details")
+    Compare("Compare Boarding Houses")
+    ManageListings("Manage Boarding-House Listings")
+    VerifyInfo("Verify Boarding-House Information")
+end
 
-    Owner --- UC1
-    Owner --- UC2
-    Owner --- UC7
-    Owner --- UC8
+Student --> Register
+Student --> Login
+Student --> Browse
+Student --> Search
+Student --> ViewDetails
+Student --> Compare
 
-    Admin --- UC2
-    Admin --- UC9
+Owner --> Register
+Owner --> Login
+Owner --> ManageListings
+
+Admin --> Login
+Admin --> VerifyInfo
 ```
 
 **Diagram Type:** UML Use Case Diagram
