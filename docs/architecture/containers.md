@@ -18,7 +18,7 @@ System_Boundary(system, "Web-Based Boarding House Finder") {
 Rel_D(student, web, "Searches / compares")
 Rel_D(owner, web, "Manages listings")
 Rel_D(admin, web, "Verifies listings")
-Rel_R(web, database, "Reads / writes data, "Database connection")
+Rel_R(web, database, "Reads / writes data")
 
 UpdateRelStyle(student, web, $offsetX="-1", $offsetY="-35")
 UpdateRelStyle(owner, web, $offsetX="53", $offsetY="-45")
