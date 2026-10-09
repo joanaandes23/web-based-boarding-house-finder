@@ -25,19 +25,3 @@ These diagrams are conceptual designs based on the planned MVP features and may 
 | 9 | UML Component Diagram | `components.md` | [Meriel P. Espenilla] |
 | 10 | Deployment Diagram (Provisional) | `deployment.md` | [Jericho V. Estay] |
 | 11 | Entity-Relationship Diagram (Draft) | `erd.md` | [Jericho V. Estay] |
-
-## Source Files
-
-Each Markdown file contains the diagram source code, scope, descriptions, and relevant design notes. The diagrams should be reviewed for consistency with the approved MVP requirements and with one another.
-
-## Review and Validation
-
-The team should review the diagrams for consistency across system requirements, components, class relationships, listing-status transitions, database entities, and deployment assumptions. Any identified issues should be corrected before final submission.
-
-## Contribution Log and AI-Use Disclosure
-
-The contribution log and AI-use disclosure for this activity must be completed truthfully by the team. Refer to the final submission document for each member's contributions, review activities, relevant commit evidence, and disclosure of AI assistance used during preparation.
-
-## Submission Note
-
-The final submission PDF should contain the rendered versions of all 11 diagrams, the required README content, the completed contribution log, and the AI-use disclosure, following the instructor's Activity 7 instructions.
