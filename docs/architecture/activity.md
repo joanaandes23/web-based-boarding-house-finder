@@ -1,7 +1,6 @@
-
 # Activity Diagram – Web-Based Boarding House Finder
 
-This activity diagram illustrates the workflow for submitting and verifying boarding-house listings and searching for suitable boarding houses. It includes the Owner/Manager, Administrator, System, and Student swimlanes.
+This activity diagram illustrates the workflow for submitting and verifying boarding-house listings and searching for suitable boarding houses. It includes the Boarding-House Owner/Manager, Administrator, System, and Student swimlanes.
 
 ```mermaid
 flowchart TB
@@ -48,7 +47,8 @@ flowchart TB
         T4["Adjust search filters"]
         T5["Select a suitable option"]
         E([End])
-        T1 --> T2 --> T3 --> T5 --> E
+        T1
+        T2 --> T3 --> T5 --> E
         T4 --> T1
     end
 
@@ -66,8 +66,18 @@ flowchart TB
     System ~~~ Student
 ```
 
-Key:
-- `Yes` – The listing information is accurate and complete, or matching boarding houses are found.
-- `No` – The listing needs correction, or no matching boarding houses are found.
-- The correction loop returns the listing to the Owner/Manager.
+**Diagram Type:** UML Activity Diagram
+
+**Scope:** This diagram shows the listing submission, verification, correction, and student search workflows, including the decision points and loops involved in these processes.
+
+**Intended Audience:** Students, boarding-house owners or managers, administrators, developers, and project evaluators.
+
+**Risk Reduced:** This view helps reduce misunderstandings about the order of activities, the responsibilities of each role, and how the system handles rejected listings and searches with no matching results.
+
+**Key:**
+- **Yes:** The listing information is accurate and complete, or matching boarding houses are found.
+- **No:** The listing needs correction, or no matching boarding houses are found.
+- The correction loop returns the listing to the Owner/Manager for correction and resubmission.
 - The search loop allows the Student to adjust filters and search again.
+
+**View Note:** This diagram describes the intended workflow and does not specify the internal implementation of the system.
