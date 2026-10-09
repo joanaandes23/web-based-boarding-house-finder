@@ -1,4 +1,3 @@
-
 # Provisional Deployment Diagram — Web-Based Boarding House Finder
 
 **Project:** Web-Based Boarding House Finder  
@@ -13,7 +12,7 @@ This diagram presents the proposed deployment architecture of the Web-Based Boar
 
 ## 2. Deployment Diagram
 
-```mermaid
+```mermaid id="dpl7a2"
 flowchart TB
 
     USER["Student / Boarding-House Owner or Manager / Administrator"]
@@ -25,12 +24,12 @@ flowchart TB
 
     subgraph HOST["Web Hosting Environment"]
         direction TB
-        APP["Web Application Runtime<br/>Next.js Application"]
+        APP["Web Application Runtime<br/>Proposed: Next.js Application"]
     end
 
     subgraph DATABASE_ENV["Database Environment"]
         direction TB
-        DB[("PostgreSQL Database")]
+        DB[("Proposed PostgreSQL Database")]
     end
 
     USER --> BROWSER
@@ -56,24 +55,39 @@ flowchart TB
 
 - **Client Device:** Represents the device used by students, boarding-house owners or managers, and administrators to access the system.
 - **Web Browser:** Displays the web interface and allows users to interact with the application.
-- **Web Hosting Environment:** Represents the proposed environment where the Next.js web application runs.
-- **Database Environment:** Represents the proposed environment where the PostgreSQL database stores persistent system data.
+- **Web Hosting Environment:** Represents the proposed environment where the web application runs. Next.js is a proposed technology pending confirmation by the team.
+- **Database Environment:** Represents the proposed environment where PostgreSQL stores persistent system data.
 
 ## 4. Communication Protocols
 
-- **HTTPS:** Represents secure communication between the user's web browser and the web application.
-- **Database connection:** Represents communication between the web application and PostgreSQL. The actual database protocol, credentials, and connection configuration depend on the final deployment setup.
+- **HTTPS:** Represents the intended secure communication between the user's web browser and the web application.
+- **Database Connection:** Represents communication between the web application and PostgreSQL. The actual database protocol, credentials, and connection configuration will depend on the final deployment setup.
 
 ## 5. Diagram Key
 
 - **Rectangular nodes:** Represent users, client software, or application runtime environments.
 - **Cylinder node:** Represents the database.
 - **Solid arrows:** Represent the intended access or communication path between nodes.
-- **Labeled arrows:** Identify the communication method or connection.
+- **Labeled arrows:** Identify the intended communication method or connection.
 
-## 6. Architecture Notes
+## 6. Intended Audience
 
-- This diagram is provisional and represents a proposed deployment architecture, not a verified description of the current production environment.
+Developers, system analysts, project advisers, and team members responsible for planning, deploying, and maintaining the system.
+
+## 7. Risk Reduced
+
+Reduces ambiguity about the intended communication paths and deployment responsibilities, helping the team identify hosting, database connectivity, and security requirements before deployment.
+
+## 8. Architecture Notes
+
+- This diagram is provisional and represents a proposed deployment architecture, not a verified description of an existing production environment.
 - The final hosting provider, server configuration, database hosting arrangement, and deployment settings must be confirmed by the team.
+- Next.js and PostgreSQL are proposed technologies and should not be treated as finalized until approved by the team.
 - The deployment architecture must remain consistent with the approved container and component diagrams.
+- HTTPS represents the intended secure browser-to-application connection; the actual configuration must be verified during deployment.
+- The database connection should use appropriate access controls and should not expose database credentials to the browser or client-side code.
 - The team should finalize this diagram by Week 12 after confirming the actual deployment environment.
+
+## 9. View Note
+
+This diagram presents the proposed physical deployment arrangement of the system. It will be reviewed and updated by Week 12 to reflect the team's selected hosting environment, database configuration, and actual deployment architecture.
