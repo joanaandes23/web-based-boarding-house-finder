@@ -11,8 +11,8 @@ Person(owner, "Boarding-House Owner/Manager", "Manages listings")
 Person(admin, "Administrator", "Verifies listing information")
 
 System_Boundary(system, "Web-Based Boarding House Finder") {
-    Container(web, "Web Application", "Next.js (proposed)", "User interface, search, comparison, listing management, and verification")
-    ContainerDb(database, "Database", "PostgreSQL (proposed)", "Stores user accounts and boarding-house records")
+    Container(web, "Web Application", "Next.js", "User interface, search, comparison, listing management, and verification")
+    ContainerDb(database, "Database", "PostgreSQL", "Stores user accounts and boarding-house records")
 }
 
 Rel_D(student, web, "Searches / compares")
